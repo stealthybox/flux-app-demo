@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: traefik
 bases:
 - ../../../../lib/traefik
+- namespace.yaml
