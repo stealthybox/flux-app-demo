@@ -1,0 +1,13 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+- role: worker
+  ### these can be useful if you want to create an HTTP/HTTPS ingress hosted via NodePort, forwarded to your host
+  extraPortMappings:
+  - containerPort: 31080
+    hostPort: 80
+    protocol: tcp
+  - containerPort: 31443
+    hostPort: 443
+    protocol: tcp
