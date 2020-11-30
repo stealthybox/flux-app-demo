@@ -25,5 +25,5 @@ spec:
     kind: GitRepository
     name: stage
   validation: client
-dependsOn:
-  - name: infra
+  dependsOn:
+    - name: infra
