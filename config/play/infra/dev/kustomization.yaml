@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: dev
 bases:
 - ../../../../lib/netpolicy
+- namespace.yaml

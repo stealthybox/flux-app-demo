@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: production
 bases:
 - ../../../../lib/netpolicy
+- namespace.yaml
